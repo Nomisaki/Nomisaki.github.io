@@ -1,0 +1,297 @@
+.profile-image>img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    position: absolute;
+    margin-left: 20px;
+    top: 20px;
+}
+h3.profile-title{
+    font-size: x-small;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 70px;
+    color: white;
+    margin-left: 20px;
+} 
+
+p.profile-description{
+    font-size: 70%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 85px;
+    color: white;
+    margin-left: 20px;
+}
+
+.main-navigation a, li{
+    font-size: small;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+.navigation{
+    position: absolute;
+    top: 120px;
+    left: -23px;
+}
+
+.navigation li{
+    list-style-type: none;
+    color: white;
+}
+
+.social-icons ul{
+    display: flex;
+}
+
+.social-icons li{
+    list-style-type: none;
+    padding-right: 15px;
+    color: white;
+}
+
+.responsive-header{
+    display: none;
+}
+
+.navigation li{
+    transition:  all 0.3s;
+}
+.navigation li:hover{
+    transform: scale(1.2);
+}
+
+#top{
+    background-image: url("../img/7.jpg");
+    padding-top: 160px;
+    padding-left: 100px;
+    padding-bottom: 160px;
+    padding-right: 100px;
+
+}
+
+.banner-overlay{
+    background-color: rgb(131, 131, 132, 0.5);
+    width: 1025px;
+    height: 320px;
+    position: absolute;
+    top: 8px;
+    left: 230px;
+}
+
+.sidebar-menu{
+    position: absolute;
+    top: 8px;
+    left: 2px;
+    width: 230px;
+    height: 1900px;
+    background-color: #5F6D7E;
+}
+
+.main-content{
+    margin-left: 270px;
+}
+
+.welcome-text{
+    margin-left: 270px;
+}
+
+.welcome-text h2{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 135px;
+    left: 280px;
+}
+
+.welcome-text h5{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 180px;
+    left: 280px;
+    margin-right: 80px;
+}
+
+.social-icons{
+    position: absolute;
+    top: 220px;
+    left: 0px;
+    position: absolute;
+    top: 250px;
+    left: -23px;
+}
+
+.social-icons i{
+    color: white;
+}
+
+.social-icons i:hover{
+    color: black;
+}
+
+.navigation>li:nth-child(1):hover {
+    background-color: #5B6878; 
+    padding-right: 128px;
+}
+
+.navigation>li:nth-child(2):hover {
+    background-color: #5B6878; 
+    padding-right: 124px;
+}
+
+.navigation>li:nth-child(3):hover {
+    background-color: #5B6878; 
+    padding-right: 120px;
+}
+
+.navigation>li:nth-child(4):hover {
+    background-color: #5B6878; 
+    padding-right: 110px;
+}
+
+.navigation>li:hover{
+    scale: 0.9;
+}
+
+.widget-title{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.about-image>img{
+    width: 950px;
+    padding-bottom: 20px;
+}
+
+.col-md-12 p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller;
+    margin-right: 15px;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+.blue{
+    color: blue;
+}
+
+.green{
+    color: green;
+}
+
+.col-md-12 a{
+    text-decoration: none;
+    color: #4079AA;
+}
+
+.project-item>img{
+    width: 32.5%;
+    float: left;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+.navigation i{
+    padding-right: 9px;
+}
+
+.inside {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    background: rgba(168, 170, 172, 0.72);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.project-item:hover .inside {
+    visibility: visible;
+    opacity: 1;
+}
+
+.project-item {
+    position: relative;
+}
+
+#contact h4{
+    position: absolute;
+    top: 1510px;
+}
+
+#contact p{
+    position: absolute;
+    top: 1570px;
+}
+
+#your-name{
+    border: 1;
+    border-radius: 0.00001;
+    width: 30%;
+    position: absolute;
+    top: 1640px;
+    width: 290px;
+    left: 278px;
+}
+
+#email{
+    border: 1;
+    width: 30%;
+    position: absolute;
+    left: 603px;
+    width: 290px;
+    position: absolute;
+    top: 1640px;
+}
+
+#your-subject{
+    border: 1;
+    width: 30%;
+    position: absolute;
+    left: 928px;
+    position: absolute;
+    top: 1640px;
+    width: 290px;
+}
+
+:placeholder-shown{
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#message{
+    border: 1;
+    position: absolute;
+    top: 1690px;
+    width: 942px;
+    left: 278px;
+}
+
+.copyright-text{
+    position: absolute;
+    top: 1860px;
+    padding-bottom: 20px;
+    left: 650px;
+}
+  
+.button-big-default{
+    border: 0;
+    position: absolute;
+    top: 1820px;
+    left: 280px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 120px;
+    height: 40px;
+    background-color: #5F6D7E;
+}  
+
+.col-md-4col-sm-6, .col-md-4col-sm-12, .col-md-12col-sm-12{
+    border: none;
+    margin-top: -13px;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CSS Lab Template</title>
+        <meta name="description" content="">
+		<link rel="stylesheet" href="css/css.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"> 
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+
+		<div class="container">
+			<div class="logo-header">
+				<div class="logo">
+					<img src="logo.png">
+				</div>
+			</div>
+			
+			<div>
+				<div class="header">
+					<h1 class="header-name">
+						Hello, Word!
+					</h1>
+					<p class="description">
+						Welcome to Bootstrap v3.3.7. Check out this awesome jumbotron!
+					</p>
+					<button href="#" class="button">Learn More</button>
+				</div>
+
+			</div>
+
+				<div>
+					<div class="heading">
+						<h2 class="title">
+							Heading goes here
+						</h2>
+						<hr>
+
+						<p class="title-description">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+						</p>
+
+						<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/dr2sIoD7eeU?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</div>
+
+					<div class="alert-bar">
+						<p class="alert"><i class="fa fa-exclamation-circle"></i>
+							Whoa! This is super important alert!
+						</p>
+					</div>
+				</div>
+
+				<div class="body">
+
+					<div>
+
+						<button class="button-message">
+							Message
+						</button>
+						
+					</div>
+
+
+					<div class="form-head">
+
+						<p class="form-header">
+							Welcome Candidate
+						</p>	
+						
+					</div>
+
+					<div class="form">
+						
+						<p class="description">
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+						</p>
+
+						<form class="meow">
+							<label class="greating"></label>
+
+							<input type="text" placeholder="Input your greating..."/>
+							
+							<input type="submit" value="SEND" class="send-button"/>
+						</form>
+
+						<p class="some-description"><a href="#">
+							I dont watch Star Trek and dont get this reference
+							</a>
+						</p>
+
+					</div>
+
+					<div>
+
+						<p class="progress-description">
+							Cast your vote! What do you think about space? See vote progress bar below!
+						</p>
+
+					</div>
+
+					<div class="progress-bar">
+
+						<div class="cool-progress"></div>
+						<div class="lame-progress"></div>
+					</div>
+					<div class="buttons">
+						<button class="cool-button">Cool</button>
+						<button class="lame-button">Lame</button>
+					</div>
+
+					<script>
+						const coolButton = document.querySelector('.cool-button');
+						const lameButton = document.querySelector('.lame-button');
+						const coolProgress = document.querySelector('.cool-progress');
+						const lameProgress = document.querySelector('.lame-progress');
+
+						coolButton.addEventListener('click', () => {
+							coolProgress.style.width = parseInt(coolProgress.style.width || '0') + 10 + '%';
+						});
+
+						lameButton.addEventListener('click', () => {
+							lameProgress.style.width = parseInt(lameProgress.style.width || '0') + 10 + '%';
+						});
+
+					</script>
+
+				</div>
+
+				
+		</div>
+		
+		<div class="footer-message">
+				<p id="message">
+					2017 All Rights Reserved, SomeCompany.
+				</p>
+		</div>
+
+	</body>

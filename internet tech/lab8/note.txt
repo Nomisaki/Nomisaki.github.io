@@ -1,0 +1,62 @@
+// program to check if the string is palindrome or not
+
+function checkPalindrome(string) {
+
+    // find the length of a string
+    const len = string.length;
+
+    // loop through half of the string
+    for (let i = 0; i < len / 2; i++) {
+
+        // check if first and last string are same
+        if (string[i] !== string[len - 1 - i]) {
+            return 'It is not a palindrome';
+        }
+    }
+    return 'It is a palindrome';
+}
+
+// take input
+const string = prompt('Enter a string: ');
+
+// call the function
+const value = checkPalindrome(string);
+
+console.log(value);
+
+
+
+
+function isPalindrome(str) {
+            const reversedStr = str.split('').reverse().join('');
+            return str === reversedStr;
+            }
+
+            function sumOfDigits(num) {
+            let sum = 0;
+            while (num > 0) {
+                sum += num % 10;
+                num = Math.floor(num / 10);
+            }
+            return sum;
+            }
+
+            // Example usage
+            const number = 12345;
+            const sum = sumOfDigits(number); // 15
+
+            function setColor() {
+            const element = document.getElementById('rectangle');
+            const hour = new Date().getHours();
+            if (hour >= 6 && hour < 18) {
+                // Set the background color to green during the day
+                element.style.backgroundColor = 'green';
+            } else {
+                // Set the background color to red at night
+                element.style.backgroundColor = 'red';
+            }
+            }
+
+            // Call the function on page load and every minute thereafter
+            setColor();
+            setInterval(setColor, 60000); // 60000 milliseconds = 1 minute

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>LAB 8</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    
+    <input type="text" id="string" pattern="Нэрээ бичээрэй.">
+    <button onclick="check_palindrome()">Таны нэр палиндром уу?</button>
+    <p id="first"></p>
+
+
+    <input type="number" id="number" pattern="Натурал тоо бичээрэй.">
+    <button onclick="calculate_sum()">Цифрүүдийн нийлбрийг олох</button>
+    <p id="second"></p>
+
+    <input type="number" id="distance" pattern="Натурал тоо бичээрэй.">
+    <button onclick="calculate_time()">Туулайг хөөцгөөе</button>
+    <p id="third"></p>
+
+    
+    <input type="number" id="num" pattern="108-аас бага тоо оруулна уу.">
+    <button onclick="entrance_floor_door()">Аль айл вэ?</button>
+    <p id="fourth"></p>
+
+
+
+    <script>
+
+        function check_palindrome() {
+          const string = document.querySelector('#string').value;
+          const reversedString = string.split('').reverse().join('');
+          if (string === reversedString) {
+            document.querySelector('#first').textContent = `Таны нэр палиндром юм байна.`;
+          } else {
+            document.querySelector('#first').textContent = `Таны нэр палиндром биш юм байна.`;
+          }
+        }
+
+
+        function calculate_sum() {
+          const number = document.querySelector('#number').value;
+          let sum = 0;
+          for (let i = 0; i < number.length; i++) {
+            sum += parseInt(number.charAt(i));
+          }
+          document.querySelector('#second').textContent = ` ${number} тооны цифрүүдийн нийлбэр нь ${sum} байна.`;
+        }
+
+        function calculate_time() {
+        const wolfSpeed = 25; 
+        const rabbitSpeed = 18; 
+        const distance = document.getElementById("distance").value; 
+        const timeToCatch = distance / (wolfSpeed - rabbitSpeed); 
+        const formattedTime = timeToCatch.toFixed(2); 
+        document.getElementById("third").textContent = "Чоно туулайг " + formattedTime + " цагт барина."; 
+        }
+
+
+        function entrance_floor_door() {
+        const num = document.getElementById("num").value;
+        if (num > 108) {
+          document.getElementById("fourth").textContent = "Тийм айл байхгүй.";
+        } else {
+          const entrance = Math.ceil(num / 36);
+          const floor = Math.ceil((num % 36) / 4); 
+          const door = num % 4 || 4; 
+          document.getElementById("fourth").textContent = num + " тоот айл нь " + entrance + "-р орцны " + floor + "-р давхрын " + door + " дахь хаалга.";
+        }
+      }
+
+      const date = new Date(); 
+      const hours = date.getHours(); 
+
+      if (hours >= 6 && hours < 18) {
+        
+        const greenDiv = document.createElement("div");
+        greenDiv.style.width = "50px";
+        greenDiv.style.height = "50px";
+        greenDiv.style.backgroundColor = "green";
+        greenDiv.style.position = "fixed";
+        greenDiv.style.top = "0";
+        greenDiv.style.right = "0";
+        document.body.appendChild(greenDiv);
+      } else {
+        
+        const redDiv = document.createElement("div");
+        redDiv.style.width = "50px";
+        redDiv.style.height = "50px";
+        redDiv.style.backgroundColor = "red";
+        redDiv.style.position = "fixed";
+        redDiv.style.bottom = "0";
+        redDiv.style.left = "0";
+        document.body.appendChild(redDiv);
+      }
+
+
+
+
+    </script>
+    
