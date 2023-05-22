@@ -81,22 +81,6 @@ header a:hover{
 	font-size: 20px;
 }
 
-#newsletter{
-	padding:15px;
-	color: #FFFFFF;
-	background: #383333;
-}
-#newsletter h1{
-	float: left;
-}
-#newsletter form{
-	float: right;
-}
-#newsletter input[type="email"]{
-	padding: 4px;
-	height: 24px;
-	width: 250px;
-}
 #boxes{
 	margin-top: 20px;
 }
@@ -140,19 +124,17 @@ ul#ongoing li{
 	background: #e6e6e6;
 }
 footer{
-	padding: 20px; 
+	padding: 10px; 
 	margin-top:20px;
 	color: #ffffff;
 	background-color: #FF6A3C;
-	text-align: center
+	text-align: center;
 }
 
 @media(max-width: 768px){
 	header #branding,
 	header nav,
 	header nav li,
-	#newsletter h1,
-	#newsletter form,
 	#boxes .box,
 	article#main-col,
 	aside#sidebar
